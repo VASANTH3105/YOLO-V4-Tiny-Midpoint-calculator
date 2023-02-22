@@ -21,7 +21,7 @@ while True:
  	
  	for c in cnts:
  		area = cv2.contourArea(c)
- 		if area > 500:
+ 		if area > 300: #greater area better detection
 	 		cv2.drawContours(frame,[c],-1,(0,255,0),3)
 	 		#refheresits  https://www.youtube.com/watch?v=6AY5p1uC5gM
 	 		M = cv2.moments(c)
