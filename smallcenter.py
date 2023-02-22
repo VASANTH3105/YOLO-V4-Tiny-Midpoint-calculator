@@ -23,7 +23,7 @@ while True:
  		area = cv2.contourArea(c)
  		if area > 300: #greater area better detection
 	 		cv2.drawContours(frame,[c],-1,(0,255,0),3)
-	 		#refheresits  https://www.youtube.com/watch?v=6AY5p1uC5gM
+	 		#refheresits  https://www.youtube.com/watch?v=6AY5p1uC5gM 
 	 		M = cv2.moments(c)
 	 		cx = int(M["m10"]/ M["m00"])
 	 		cy = int(M["m01"]/M["m00"])
